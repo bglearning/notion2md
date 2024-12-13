@@ -47,7 +47,9 @@ class BlockConvertor:
                         + "\n\n"
                 )
             else:
-                outcome_block = f"[//]: # ({block_type} is not supported)\n\n"
+                # TODO: Make this a log
+                # outcome_block = f"[//]: # ({block_type} is not supported)\n\n"
+                outcome_block = "\n\n"
             # Convert child block
             if block["has_children"]:
                 # create child page
